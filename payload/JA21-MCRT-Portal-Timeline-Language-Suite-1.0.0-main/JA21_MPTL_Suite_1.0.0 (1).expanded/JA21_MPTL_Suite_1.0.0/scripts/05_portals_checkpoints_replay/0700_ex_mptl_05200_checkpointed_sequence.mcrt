@@ -1,0 +1,16 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_05200
+policy no_network
+metadata { timebase: 24/1 deterministic: true }
+timeline Timeline05200 {
+  sequence Intro { track Camera { clip FlyIn from 0s to 5s } track VFX { clip Weather from 0s to 12s } }
+  sequence PortalCrossing {
+    track Scene { clip OpenPortal from 0s to 4s }
+    track Motion { clip Traverse from 2s to 8s }
+    track VFX { clip Distortion from 1s to 9s }
+    sync group PortalSync { Scene, Motion, VFX }
+    checkpoint BeforeCrossing at 1s restore [Scene, Motion, VFX]
+  }
+  branch Narrative6 at 10s { when choice("left") -> Intro otherwise -> PortalCrossing }
+  cinematic playback deterministic replayable true
+}

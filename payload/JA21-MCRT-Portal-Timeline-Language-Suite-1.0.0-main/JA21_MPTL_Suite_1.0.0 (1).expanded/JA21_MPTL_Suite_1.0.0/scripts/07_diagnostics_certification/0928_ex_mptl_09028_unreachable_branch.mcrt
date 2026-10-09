@@ -1,0 +1,6 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_09028
+policy no_network
+metadata { timebase: 48/1 deterministic: true }
+timeline Timeline09028 { sequence Sequence09028 { track Main { branch Never at 1s { when false -> Missing } } } }
+certify timeline Timeline09028 using strict_timeline

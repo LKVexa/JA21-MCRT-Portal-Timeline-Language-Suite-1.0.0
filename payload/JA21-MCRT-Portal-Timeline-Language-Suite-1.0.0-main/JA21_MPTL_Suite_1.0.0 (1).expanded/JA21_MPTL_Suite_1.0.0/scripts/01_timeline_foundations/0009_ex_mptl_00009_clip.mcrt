@@ -1,0 +1,15 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_00009
+policy no_network
+metadata { timebase: 60/1 deterministic: true }
+timeline Timeline00009 {
+  duration: 14s
+  sequence Sequence00009 {
+    track Main {
+      clip Clip00009 from 0s to 3s rate 1/1
+      key 9/10s value 1.2
+      marker Mark0 at 5s
+      event Event2 at 5s payload { topic: "clip" }
+    }
+  }
+}

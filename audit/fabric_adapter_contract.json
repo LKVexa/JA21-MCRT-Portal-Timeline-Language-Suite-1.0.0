@@ -1,0 +1,17 @@
+{
+  "profile": "mcrt.portal.timeline",
+  "proposed_contribution": "Causal events, virtual time, checkpoints and replay contracts",
+  "reuse_boundary": "Timeline descriptions and executed event ledgers have different authority.",
+  "source_archive_sha256": "18397c5e458fc7b17a67025edec2d798395c62feef7de56635a2d6bdb18d186b",
+  "source_evidence_paths": [
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/SUITE_CATALOG.md",
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/source/original/grammar/grammar.ebnf",
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/source/original/grammar/grammar_specification.md",
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/source/original/language_suite_specification.md",
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/specifications/CANONICAL_GRAMMAR.ebnf",
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/specifications/CANONICAL_GRAMMAR_SPECIFICATION.md",
+    "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/JA21_MPTL_Suite_1.0.0 (1).expanded/JA21_MPTL_Suite_1.0.0/specifications/CANONICAL_LANGUAGE_SUITE_SPECIFICATION.md"
+  ],
+  "executable_adapter_implemented": false,
+  "mathematical_foundation": "8S Penteract-S3 Master Coupled Mechanics Law for intended JA model; typed operator semantics require their owning profile."
+}

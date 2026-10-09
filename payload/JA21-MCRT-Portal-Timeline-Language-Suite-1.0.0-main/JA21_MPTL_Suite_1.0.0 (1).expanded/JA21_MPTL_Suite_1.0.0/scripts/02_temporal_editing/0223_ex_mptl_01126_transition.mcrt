@@ -1,0 +1,14 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_01126
+policy no_network
+metadata { timebase: 25/1 deterministic: true }
+timeline Timeline01126 {
+  sequence Sequence01126 {
+    track Camera bind scene.MainCamera { clip Establish from 0s to 4s easing ease_in_out }
+    track Portal bind scene.PortalA { clip Open from 3s to 7s trim 0.25s..3.75s }
+    transition Establish -> Open duration 1s mode crossfade
+    branch Choice1 at 5s { when flag("authorized") -> Open otherwise -> Establish }
+    sync group Sync6 { Camera, Portal }
+    checkpoint CP01126 at 6s restore [Camera, Portal]
+  }
+}

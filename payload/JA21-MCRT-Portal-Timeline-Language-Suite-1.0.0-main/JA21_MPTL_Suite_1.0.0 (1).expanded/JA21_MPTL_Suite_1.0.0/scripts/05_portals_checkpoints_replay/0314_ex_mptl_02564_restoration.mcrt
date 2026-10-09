@@ -1,0 +1,19 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_02564
+policy no_network
+metadata { timebase: 60/1 deterministic: true }
+timeline Timeline02564 {
+  procedural sequence Sequence02564 seed 2564 {
+    track Scene { clip PortalArrival from 0s to 8s bind scene.PortalScene11 }
+    track Motion { clip Walk from 1s to 7s bind motion.Actor14 }
+    track VFX { clip PortalGlow from 2s to 6s bind vfx.Portal1 }
+    barrier AllReady at 2s requires [Scene, Motion, VFX]
+    branch Outcome at 6s deterministic_by "state_hash" {
+      when state.success -> Success
+      otherwise -> Restore
+    }
+    checkpoint Restore at 5s
+    replay hash sha256("timeline:02564")
+  }
+}
+verify replay_hash == "invalid-02564"

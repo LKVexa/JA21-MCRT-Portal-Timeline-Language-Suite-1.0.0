@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JA21 MCRT Portal Timeline Technical Record",
+  "type": "object",
+  "required": [
+    "suite_record_id",
+    "source_record_id",
+    "sequence",
+    "language",
+    "topic",
+    "tier",
+    "example_class",
+    "source",
+    "source_hash",
+    "semantic_hash",
+    "ast",
+    "compiler_representation",
+    "runtime_representation"
+  ],
+  "properties": {
+    "suite_record_id": {
+      "type": "string"
+    },
+    "source_record_id": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "language": {
+      "const": "mcrt.portal.timeline"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 6
+    },
+    "example_class": {
+      "enum": [
+        "positive",
+        "negative",
+        "certification"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_hash": {
+      "type": "string",
+      "pattern": "^sha256:"
+    },
+    "semantic_hash": {
+      "type": "string",
+      "pattern": "^sha256:"
+    },
+    "ast": {
+      "type": "object"
+    },
+    "compiler_representation": {
+      "type": "object"
+    },
+    "runtime_representation": {
+      "type": "object"
+    },
+    "validation_result": {
+      "type": "object"
+    },
+    "publication": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

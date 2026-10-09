@@ -1,0 +1,6 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_09001
+policy no_network
+metadata { timebase: 25/1 deterministic: true }
+timeline Timeline09001 { sequence Sequence09001 { track Main { replay expect_hash "aaaa" actual_hash "bbbb" } } }
+certify timeline Timeline09001 using strict_timeline

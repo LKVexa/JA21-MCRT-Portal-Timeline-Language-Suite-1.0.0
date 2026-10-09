@@ -1,0 +1,64 @@
+{
+  "repository": "JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0",
+  "copyright": "JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0 (C) 2026 RUSSELL PHILIP SMITHSON",
+  "license": "GPL-3.0-only",
+  "publication_date": "2026-10-09",
+  "source_preservation": "Original source directories, compressed archives, source manifests, and prior audit source statistics remain unchanged.",
+  "manifest_policy": "Only existing current manifest/checksum records covering files changed by the licensing pass were refreshed. No source audit statistics were rewritten.",
+  "changes": [
+    {
+      "path": "COPYRIGHT",
+      "action": "added",
+      "reason": "Requested repository copyright attribution",
+      "original_sha256": null,
+      "original_bytes": null,
+      "current_sha256": "446164938b8a41456f32593051fe48e2a9aecf16b4c7095741443355b4b5b27f",
+      "current_bytes": 118
+    },
+    {
+      "path": "LICENSE",
+      "action": "added",
+      "reason": "Requested GPL-3.0-only repository license",
+      "original_sha256": null,
+      "original_bytes": null,
+      "current_sha256": "2bee3e89b6535a4e54604900029570dfd5ddfd71c2b649b5014748bafac384c3",
+      "current_bytes": 35268
+    },
+    {
+      "path": "NOTICE",
+      "action": "added",
+      "reason": "Repository license and publication provenance notice",
+      "original_sha256": null,
+      "original_bytes": null,
+      "current_sha256": "60ea5cecc8aa7a66a86acbef129085a75f4ed9430da4309cb03802f2c0f1d795",
+      "current_bytes": 387
+    },
+    {
+      "path": "audit/updated_manifest.json",
+      "action": "modified",
+      "reason": "Refresh current manifest records for licensing edits",
+      "original_sha256": "d29adcf8e42c45e276df276bf99f04920b13b5f499ec15be1b91c70e1d35a02c",
+      "original_bytes": 367311,
+      "current_sha256": "149498a43f2c0b9b5e41e19e55ad7a60349282a9403e3063f52485a16e5b58d8",
+      "current_bytes": 361671
+    },
+    {
+      "path": "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/LICENSE.txt",
+      "action": "modified",
+      "reason": "Replace prior authored package license notice with requested GPL-3.0-only",
+      "original_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "original_bytes": 11358,
+      "current_sha256": "2bee3e89b6535a4e54604900029570dfd5ddfd71c2b649b5014748bafac384c3",
+      "current_bytes": 35268
+    }
+  ],
+  "current_manifest_updates": [
+    {
+      "path": "audit/updated_manifest.json",
+      "covered_changes": [
+        "payload/JA21-MCRT-Portal-Timeline-Language-Suite-1.0.0-main/LICENSE.txt"
+      ]
+    }
+  ],
+  "ledger_integrity": "The publication-wide checksum manifest should cover this ledger; this ledger does not include a self-hash."
+}

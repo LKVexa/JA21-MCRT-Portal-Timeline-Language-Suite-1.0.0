@@ -1,0 +1,6 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_09006
+policy no_network
+metadata { timebase: 25/1 deterministic: true }
+timeline Timeline09006 { sequence Sequence09006 { track Main { sync group Deadlock { A waits B, B waits A } } } }
+certify timeline Timeline09006 using strict_timeline

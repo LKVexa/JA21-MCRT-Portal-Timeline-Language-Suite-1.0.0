@@ -1,0 +1,6 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_09614
+policy no_network
+metadata { timebase: 60/1 deterministic: true }
+timeline Timeline09614 { sequence Sequence09614 { track Main { timebase: sqrt(2)/1 } } }
+certify timeline Timeline09614 using strict_timeline

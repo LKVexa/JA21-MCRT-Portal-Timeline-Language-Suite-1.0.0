@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#13102b"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<g fill="none" stroke="#2ad7c9" stroke-width="3" opacity=".8">
+<path d="M120 700 C320 420 500 820 720 500 S1120 210 1480 420"/>
+<path d="M120 760 C360 560 520 900 760 600 S1160 330 1480 520" opacity=".45"/>
+</g>
+<g filter="url(#glow)"><circle cx="720" cy="500" r="74" fill="none" stroke="#8b6cff" stroke-width="12"/><circle cx="720" cy="500" r="28" fill="#d9b95b"/><path d="M646 500H480M794 500h190" stroke="#2ad7c9" stroke-width="8"/><path d="M720 426V310M720 574v116" stroke="#8b6cff" stroke-width="8"/></g>
+<g fill="#eaf6ff" font-family="Segoe UI,Arial,sans-serif"><text x="120" y="180" font-size="34" letter-spacing="8">JA21 LANGUAGE SUITE</text><text x="120" y="270" font-size="78" font-weight="700">MCRT PORTAL TIMELINE</text><text x="120" y="340" font-size="38">Deterministic temporal authoring, portals, replay, and evidence</text><text x="120" y="900" font-size="28" fill="#9ab4c7">SOPHIA · CHARLOTTE · LANDON · Professor + Podium</text></g>
+</svg>

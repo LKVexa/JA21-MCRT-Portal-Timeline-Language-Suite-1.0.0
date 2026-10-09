@@ -1,0 +1,359 @@
+{
+  "example": {
+    "ast": {
+      "format": "scl_ast_json_1",
+      "root": {
+        "attributes": {
+          "example_class": "positive",
+          "tier": 3,
+          "topic": "cinematic_playback"
+        },
+        "capability_requirements": [
+          "deterministic",
+          "no_network",
+          "preserve_provenance"
+        ],
+        "children": [
+          {
+            "node_id": "mptl.node.02501.decl",
+            "node_kind": "cinematic_playback",
+            "source_span": {
+              "end_column": 2,
+              "end_line": 23,
+              "start_column": 1,
+              "start_line": 17
+            }
+          }
+        ],
+        "declared_type": "mcrt.portal.timeline.Program",
+        "effect_set": [
+          "domain_state_declaration"
+        ],
+        "inferred_type": "mcrt.portal.timeline.Program",
+        "language_id": "mcrt.portal.timeline",
+        "mcrt_reference": "MPTL:02501",
+        "module_id": "corpus.mcrt_portal_timeline.example_02501",
+        "node_id": "mptl.node.02501.root",
+        "node_kind": "mcrt_portal_timeline.Program",
+        "origin_hash": "sha256:0d025297d22d211a09121661832196f1e3c4dd82c2bcc477745b890e1e9eae32",
+        "r12_reference": "PORTAL_TIMELINE_R12:02501",
+        "semantic_status": "valid",
+        "source_span": {
+          "end_column": 2,
+          "end_line": 23,
+          "start_column": 1,
+          "start_line": 17
+        }
+      }
+    },
+    "compiler_representation": {
+      "diagnostics": [],
+      "mcrt": {
+        "id": "MPTL-02501",
+        "language": "mcrt.portal.timeline",
+        "operator": "compose_cinematic_playback",
+        "profile": "PORTAL_TIMELINE_R12",
+        "relation": "mcrt.portal.timeline.example_02501.cinematic_playback",
+        "semantic_hash": "f8460f254489e8278a021e9eeb15195ed9b6c1482f4a33ff60a36d689bf02b28",
+        "sequence": 2501,
+        "source_hash": "0d025297d22d211a09121661832196f1e3c4dd82c2bcc477745b890e1e9eae32",
+        "status": "stable"
+      },
+      "pipeline": [
+        "lex",
+        "parse",
+        "ast",
+        "name_resolution",
+        "type_check",
+        "semantic_validation",
+        "safety_gate",
+        "normalize",
+        "optimize",
+        "r12_lower",
+        "mcrt_emit"
+      ],
+      "r12": {
+        "confidence": 1.0,
+        "depth": 5,
+        "error": "error0",
+        "face": "phi_mcrt_portal_timeline",
+        "omega": "OMEGA_MPTL_CINEMATIC_PLAYBACK",
+        "operator": "compose_cinematic_playback",
+        "relation": "mcrt.portal.timeline.example_02501.cinematic_playback",
+        "sequence": "s02501",
+        "state": "validated",
+        "status": "stable",
+        "time": "theta02501",
+        "vector": "vmptl02501",
+        "rho": {
+          "pair": "[additional data required]",
+          "class": "AMBIGUOUS_PENDING_MEASUREMENT",
+          "latent_4d": null,
+          "projected_3d": null,
+          "projection_id": "[additional data required]",
+          "legacy_relation": "mcrt.portal.timeline.example_02501.cinematic_playback"
+        },
+        "o": {
+          "semantic_operator": "compose_cinematic_playback",
+          "coupling_operator": "unassigned",
+          "collision_operator": "dual_gap_test"
+        },
+        "psi": {
+          "phase": null,
+          "intrinsic_frequency": null,
+          "synchronization_regime": "requires A_nm, K, omega_n, and initial phase",
+          "legacy_state": "validated"
+        },
+        "theta": {
+          "time": "theta02501",
+          "timestep": null,
+          "replay_id": null
+        },
+        "kappa": {
+          "d4": null,
+          "gap4": null,
+          "h4": null,
+          "gap3": null,
+          "penetration4": null,
+          "penetration3": null,
+          "phase_error_wrapped": null,
+          "driver_sync_error": null
+        },
+        "epsilon": {
+          "L": "max(ell,r_max,r_i,r_j,d4_ij)",
+          "tol4": "1e-7 L",
+          "tol3": "1e-5 L",
+          "integrator_error": null,
+          "mesh_error": null
+        },
+        "chi": "coupling_mechanics_not_evaluated",
+        "coupling_mechanics_annotation": "Pair geometry, projection, phase, adjacency, and replay data are required before a stronger judgment."
+      },
+      "r12_candidate": null,
+      "r12_profile": "PORTAL_TIMELINE_R12",
+      "safety_gate": "pass",
+      "tokens_summary": {
+        "count": 126,
+        "source_hash": "sha256:0d025297d22d211a09121661832196f1e3c4dd82c2bcc477745b890e1e9eae32"
+      },
+      "typed_ast": {
+        "root_id": "mptl.node.02501.root",
+        "status": "pass"
+      }
+    },
+    "concepts": [
+      "cinematic_playback",
+      "compose_cinematic_playback",
+      "PORTAL_TIMELINE_R12",
+      "R12",
+      "MCRT"
+    ],
+    "corpus": "SCL-EXAMPLE-CORPUS-1.0",
+    "deterministic_seed": "scl:mptl:02501:r1",
+    "difficulty": "advanced",
+    "example_class": "positive",
+    "expected_stage": "runtime",
+    "id": "EX-MPTL-02501",
+    "language": "mcrt.portal.timeline",
+    "language_name": "MCRT Portal Timeline Language",
+    "language_version": "0.3",
+    "optimization_notes": {
+      "applied": [
+        "canonical_normalization"
+      ],
+      "equivalence": "exact",
+      "notes": "No semantics-changing optimization permitted."
+    },
+    "provenance": {
+      "corpus_profile": "JA/Technical-Suite-v0.2",
+      "grammar_profile": "SCL-GRAMMAR-SPECIFICATIONS-1.0",
+      "learning_module": "MPTL-ADVANCED-02",
+      "shared_core": "SCL-SHARED-SEMANTIC-CORE-1.0",
+      "suite_profile": "SCL-LANGUAGE-SUITES-1.0",
+      "working_spec_hash": "sha256:647d3da3205d8cfe5ecdb3ac5096cbae5ca1fe4c3c846baf3b123f099ed1ccea"
+    },
+    "revision": 1,
+    "runtime_representation": {
+      "admitted": true,
+      "deterministic": true,
+      "effects": [
+        "domain_state_declaration"
+      ],
+      "entrypoint": "mcrt.portal.timeline::cinematic_playback",
+      "expected_hash": "sha256:7e9abfc28a8ad0b432f865c2a14faf5fb53044608cee458bf8d50c6975fd820a",
+      "expected_output": "cinematic_playback.result.02501",
+      "failure_stage": null,
+      "network_access": "forbidden",
+      "trace": {
+        "route": "mcrt.portal.timeline",
+        "statement_id": "MPTL-02501",
+        "status": "pass"
+      },
+      "unknown_code_execution": "forbidden"
+    },
+    "semantic_hash": "sha256:f8460f254489e8278a021e9eeb15195ed9b6c1482f4a33ff60a36d689bf02b28",
+    "semantic_interpretation": {
+      "classification": "corpus_extension_consistent_with_JA_Technical_Suite_v0.2",
+      "effects": [
+        "domain_state_declaration"
+      ],
+      "inputs": [
+        "cinematic_playback.input"
+      ],
+      "operator": "compose_cinematic_playback",
+      "outputs": [
+        "cinematic_playback.result"
+      ],
+      "policy_requirements": [
+        "no_network",
+        "no_execute_unknown_code",
+        "stable_ids",
+        "preserve_provenance"
+      ],
+      "postconditions": [
+        "stable_semantic_id",
+        "provenance_preserved"
+      ],
+      "preconditions": [
+        "source_is_parseable",
+        "types_are_resolved",
+        "policies_are_active"
+      ],
+      "relation": "mcrt.portal.timeline.example_02501.cinematic_playback"
+    },
+    "sequence": 2501,
+    "source": "mcrt portal.timeline 0.3\nmodule corpus.mcrt_portal_timeline.example_02501\npolicy no_network\nmetadata { timebase: 25/1 deterministic: true }\ntimeline Timeline02501 {\n  procedural sequence Sequence02501 seed 2501 {\n    track Scene { clip PortalArrival from 0s to 8s bind scene.PortalScene17 }\n    track Motion { clip Walk from 1s to 7s bind motion.Actor2 }\n    track VFX { clip PortalGlow from 2s to 6s bind vfx.Portal4 }\n    barrier AllReady at 2s requires [Scene, Motion, VFX]\n    branch Outcome at 6s deterministic_by \"state_hash\" {\n      when state.success -> Success\n      otherwise -> Restore\n    }\n    checkpoint Restore at 5s\n    replay hash sha256(\"timeline:02501\")\n  }\n}",
+    "source_hash": "sha256:0d025297d22d211a09121661832196f1e3c4dd82c2bcc477745b890e1e9eae32",
+    "technical_explanation": "This advanced MCRT Portal Timeline Language example teaches cinematic playback. It preserves the corpus-derived source → AST → typed/policy-verified semantic record → R12 → MCRT trace and uses deterministic IDs, hashes, provenance, and no-network safety. The example is expected to compile, lower, and produce deterministic runtime evidence.",
+    "tier": 3,
+    "tier_name": "advanced_composition",
+    "topic": "cinematic_playback",
+    "validation_result": {
+      "certification_holdout": false,
+      "checks": [
+        "metadata_schema",
+        "namespace_resolution",
+        "semantic_identity",
+        "source_hash",
+        "semantic_hash",
+        "policy_gate",
+        "representation_consistency"
+      ],
+      "diagnostic_id": null,
+      "expected": "pass",
+      "result": "pass",
+      "stage": "runtime"
+    }
+  },
+  "_coupling_mechanics": {
+    "framework": "Smithson 8S Coupled Mechanics v1.0",
+    "status": "Proposed generative and computational law; not an established physical law, not the standard sphere S^8 without separate topological proof, and not evidence of physical quantum entanglement.",
+    "author": "Russell Philip Smithson",
+    "analytical_support_layers": [
+      "SOPHIA",
+      "CHARLOTTE",
+      "LANDON"
+    ],
+    "canonical_terms": {
+      "object": "S^3 fiber",
+      "base": "five-dimensional penteract field B^5=[-1,1]^5",
+      "hidden_center": "latent five-dimensional center",
+      "fifth_coordinate": "elucidation coordinate t8 with declared independent semantic or mechanical meaning",
+      "visible_center": "projected center",
+      "pairwise_interaction": "sparse geometric-semantic classical coupling",
+      "higher_order_interaction": "selective triadic coupling",
+      "visual_overlap": "projected three-dimensional overlap",
+      "total_space": "locally eight-dimensional noncollapsed penteract-S^3 hyperfiber system"
+    },
+    "equations": {
+      "coordinate_extension": "C5=[C4|e]",
+      "independent_residual": "e_perp=(I-C4*C4^+)e",
+      "independence_score": "eta_ind=||e_perp||_2^2/(||e||_2^2+epsilon)",
+      "driver": "q(tau)=sin^2(pi*tau/T)",
+      "candidate_site": "c_n=ell*n, n in Z^5, ||n||_1<=M",
+      "shell_multiplicity": "A_5(m)=sum_{j=1}^{min(5,m)} 2^j*C(5,j)*C(m-1,j-1); A_5(0)=1",
+      "coupling_weight": "W_ij=A_ij*exp(-((c_i-c_j)^T G5 (c_i-c_j))/(2 sigma_c^2)-d_J(i,j)^2/(2 sigma_J^2))",
+      "phase_dynamics": "dtheta_i/dtau=omega_i+K2*sum_j W_ij*sin(theta_j-theta_i)+K3*sum_{j,k} H_ijk*sin(theta_j+theta_k-2theta_i)",
+      "activation_score": "h_i=beta(Mq+1/2-d_i)+a_E E_i+a_u u_i-a_chi chi_i-a_zeta zeta_i+J2*sum_j W_ij(2p_j-1)+J3*sum_{j,k} H_ijk(2p_j-1)(2p_k-1)",
+      "activation": "p_i=sigma(h_i)=1/(1+exp(-h_i))",
+      "smooth_boundary": "B_5,infinity(c_i)=prod_{a=4}^{8} b(c_{i,a})",
+      "effective_support": "s_i=p_i*kappa_i*(1-chi_i)*(1-zeta_i)*v(omega_i)",
+      "radius": "r_i=r_max*B_5,infinity(c_i)^alpha*s_i^(1/3)",
+      "fiber": "F_i=S^3_{r_i}={y in R^4: ||y||_2=r_i}",
+      "fiber_volume": "Vol(S^3_{r_i})=2*pi^2*r_max^3*B_5,infinity(c_i)^(3alpha)*s_i",
+      "total_space": "X8(tau)={(c,y) in [-1,1]^5 x R^4: ||y||_2=R(c,tau)}",
+      "full_projection": "x_i^(3)(u,tau)=[Pi5(tau)|Psi4(tau)]*[c_i;r_i*u], u in S^3",
+      "latent_5d_gap": "g5_ij=sqrt((c_i-c_j)^T G5 (c_i-c_j))-(lambda_i+lambda_j)",
+      "product_state_separation": "delta8_ij=sqrt((c_i-c_j)^T G5 (c_i-c_j)+(r_i-r_j)^2)",
+      "projected_gap": "g3_ij=||Pi5*c_i-Pi5*c_j||_2-(rhat_i+rhat_j)",
+      "semantic_gap": "gJ_ij=d_J(J_i,J_j)-theta_J",
+      "efficacy_gain": "Delta_8S=Score(M8)-Score(M7)",
+      "admission_gate": "Admit(8S) iff eta_ind>=epsilon_ind and Delta_8S>epsilon_gain"
+    },
+    "relation_test": {
+      "inputs": [
+        "g5_ij",
+        "delta8_ij",
+        "g3_ij",
+        "gJ_ij",
+        "K_ij",
+        "Sigma_ij"
+      ],
+      "classification_order": [
+        "UNRESOLVED when an uncertainty interval crosses a declared tolerance or required evidence/provenance is missing",
+        "CONTRADICTION when K_ij>=theta_K",
+        "HIGHER_ORDER when a triadic term changes the pairwise result",
+        "PROJECTION_ONLY when g5_ij>tol5 and g3_ij<=tol3",
+        "LATENT_5D_COUPLED when g5_ij<-tol5",
+        "FIBER_STATE_RESONANT when delta8_ij<=tol8 and phase coherence is within tolerance",
+        "SEMANTIC_ONLY when latent and projected gaps are positive but gJ_ij<=tolJ",
+        "REINFORCING when semantics, phase, and provenance support the same result",
+        "NONE otherwise"
+      ],
+      "scale": "L=max(ell,r_max,lambda_i,lambda_j,||c_i-c_j||_G5)",
+      "tol5": "1e-7 L unless a stricter profile is declared",
+      "tol8": "1e-7 L unless a stricter profile is declared",
+      "tol3": "1e-5 L unless a stricter rendering profile is declared",
+      "tolJ": "declared semantic-distance tolerance",
+      "observability": "A single 3x5 base projection has nullspace dimension at least two; stacked views require rank 5 for unique linear center reconstruction."
+    },
+    "r12_profile": {
+      "identity_schema": "8S law version and penteract profile",
+      "latent_geometry": "c_i, G5, shell, fifth-coordinate meaning",
+      "activation_support": "p_i, kappa_i, chi_i, zeta_i, s_i",
+      "phase_coupling": "theta_i, W_ij, H_ijk, interaction order",
+      "projection_tests": "g5, delta8, g3, gJ, projection version, tolerance profile",
+      "certification": "eta_ind, Delta_8S, relation class, limitations",
+      "fold_invariant": "document-level folding must preserve contradiction, uncertainty, provenance, projection version, and the interaction order that changed the result"
+    },
+    "execution_policy": {
+      "default": "sparse pairwise neighborhoods",
+      "escalation": "activate triadic terms only in unresolved, contradictory, high-risk, or certification-critical clusters",
+      "complexity_target": "O(Nk) pairwise sparse execution with selective higher-order escalation rather than unrestricted O(N^3) triads"
+    },
+    "validation_gate": {
+      "compare_models": "fit M7 and M8 to the same data and evaluate held-out results",
+      "required_tests": [
+        "nonredundancy",
+        "interpretability",
+        "predictive or certifying gain",
+        "cost-benefit",
+        "projection identifiability",
+        "R12 replay invariants"
+      ],
+      "replay_requirements": {
+        "independence_score_difference": "<=1e-8",
+        "center_radius_phase_difference": "<=1e-7 L with wrapped phase <=1e-6 radians",
+        "relation_class_and_tuple_hash": "identical",
+        "interaction_order": "identical"
+      }
+    },
+    "example": "When g5>tol5 and g3<=tol3, record PROJECTION_ONLY; preserve delta8, gJ, uncertainty, projection version, and interaction order independently.",
+    "annotations": [
+      "The fifth coordinate is admitted only when it contains a material residual outside span(C4), has declared meaning, and improves held-out efficacy after compute and energy costs.",
+      "A five-dimensional base plus an S^3 fiber gives local noncollapsed dimension 8, but does not by itself prove the total space is the standard sphere S^8.",
+      "Increasing latent dimension is distinct from adding higher-order coupling: H_ijk is required for genuine triadic mechanics.",
+      "Additional numerical data required: C4, proposed coordinate e, G5, W, optional H, evidence fields, phase initial conditions, projection family, apparent radii or meshes, semantic metric, tolerances, provenance, and replay identifier."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_10000
+policy no_network
+metadata { timebase: 24/1 deterministic: true }
+timeline Timeline10000 { sequence Sequence10000 { track Main { sync group Deadlock { A waits B, B waits A } } } }
+certify timeline Timeline10000 using strict_timeline
+
+--- 8S COUPLED MECHANICS EDITORIAL ANNEX ---
+Framework: Smithson 8S Coupled Mechanics v1.0.
+Base and fiber: c_n=ell*n, n in Z^5, ||n||_1<=M; F_i=S^3_{r_i}; noncollapsed local dimension 5+3=8.
+Admission: e_perp=(I-C4*C4^+)e; eta_ind=||e_perp||^2/(||e||^2+epsilon); Admit(8S) iff eta_ind>=epsilon_ind and Delta_8S>epsilon_gain.
+Coupling: W_ij=A_ij exp(-((c_i-c_j)^T G5(c_i-c_j))/(2 sigma_c^2)-d_J(i,j)^2/(2 sigma_J^2)); dtheta_i/dtau=omega_i+K2 sum_j W_ij sin(theta_j-theta_i)+K3 sum_jk H_ijk sin(theta_j+theta_k-2theta_i).
+Support and radius: p_i=sigma(h_i); s_i=p_i*kappa_i*(1-chi_i)*(1-zeta_i)*v(omega_i); r_i=r_max*B_5,infinity(c_i)^alpha*s_i^(1/3).
+Independent relations: g5 is latent coupling gap; delta8 is product-state separation; g3 is projected gap; gJ is judgement gap.
+R12 mapping: preserve penteract profile, fifth-coordinate meaning, eta_ind, W/H interaction order, phase, support, g5/delta8/g3/gJ, projection version, uncertainty, provenance, Delta_8S, relation class, and limitations.
+Example: g5>tol5 and g3<=tol3 => PROJECTION_ONLY; delta8 and gJ remain independently recorded.
+Annotation—additional data required: C4, candidate coordinate e, G5, W, optional H, evidence/support fields, phases, Pi5/Psi4/Q2, rendered glyph data, semantic metric, tolerances, provenance, and replay ID.
+--- END 8S EDITORIAL ANNEX ---

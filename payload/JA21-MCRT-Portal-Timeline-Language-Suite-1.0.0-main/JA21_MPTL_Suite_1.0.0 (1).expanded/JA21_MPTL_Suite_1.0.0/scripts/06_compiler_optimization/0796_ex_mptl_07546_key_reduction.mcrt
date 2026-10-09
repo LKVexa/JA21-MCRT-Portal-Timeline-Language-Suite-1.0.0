@@ -1,0 +1,14 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_07546
+policy no_network
+metadata { timebase: 25/1 deterministic: true }
+timeline Timeline07546 {
+  sequence Sequence07546 {
+    track A { clip Static from 0/1s to 120/24s key 0/24s value 1 key 24/24s value 1 }
+    track Dead { clip Unbound from 0/1s to 24/24s enabled false }
+    branch B at 48/24s { when true -> A otherwise -> Dead }
+    checkpoint CP at 60/24s
+  }
+}
+optimize timeline Timeline07546 using [time_normalization, interval_analysis, dead_track_removal, key_reduction(0.001), checkpoint_indexing]
+lower Timeline07546 to PORTAL_TIMELINE_R12

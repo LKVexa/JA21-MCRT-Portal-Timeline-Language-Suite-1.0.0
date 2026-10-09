@@ -1,0 +1,6 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_09163
+policy no_network
+metadata { timebase: 48/1 deterministic: true }
+timeline Timeline09163 { sequence Sequence09163 { track Main { track Exclusive exclusive { clip A from 0s to 5s clip B from 3s to 7s } } } }
+certify timeline Timeline09163 using strict_timeline

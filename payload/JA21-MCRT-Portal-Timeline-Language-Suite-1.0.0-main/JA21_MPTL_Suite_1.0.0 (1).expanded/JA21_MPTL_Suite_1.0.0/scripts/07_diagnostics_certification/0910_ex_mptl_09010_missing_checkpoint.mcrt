@@ -1,0 +1,6 @@
+mcrt portal.timeline 0.3
+module corpus.mcrt_portal_timeline.example_09010
+policy no_network
+metadata { timebase: 24/1 deterministic: true }
+timeline Timeline09010 { sequence Sequence09010 { track Main { restore MissingCheckpoint at 3s } } }
+certify timeline Timeline09010 using strict_timeline
